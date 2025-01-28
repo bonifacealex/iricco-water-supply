@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iricco Water Supply</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/Screenshot_2025-01-28_131604.png'); /* Updated image path */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(0, 120, 215, 0.9);
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .login-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .login-button:hover {
+            background-color: darkgreen;
+        }
+
+        nav {
+            background-color: rgba(0, 86, 164, 0.9);
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: rgba(0, 120, 215, 0.8);
+            color: white;
+        }
+
+        .hero h2 {
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2rem;
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .service-card h3 {
+            margin-top: 0;
+        }
+
+        .service-card p {
+            color: #555;
+        }
+
+        .register-form {
+            max-width: 400px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .register-form h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .register-form label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+        }
+
+        .register-form input {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .register-form button {
+            width: 100%;
+            padding: 0.7rem;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .register-form button:hover {
+            background-color: darkgreen;
+        }
+
+        footer {
+            background-color: rgba(0, 86, 164, 0.9);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+    </style>
+    <script>
+        function loginRedirect() {
+            window.location.href = "login.html"; // Redirect to the login page
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <button class="login-button" onclick="loginRedirect()">Login</button>
+        <h1>Welcome to Iricco Water Supply</h1>
+    </header>
+
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Your Trusted Partner in Agriculture</h2>
+        <p>Reliable water supply solutions for farmers across the region.</p>
+    </section>
+
+    <section id="services" class="services">
+        <div class="service-card">
+            <h3>Water Distribution</h3>
+            <p>Efficient and sustainable water delivery to farms.</p>
+        </div>
+        <div class="service-card">
+            <h3>Irrigation Planning</h3>
+            <p>Customized irrigation systems tailored to your crops.</p>
+        </div>
+        <div class="service-card">
+            <h3>Consulting Services</h3>
+            <p>Expert advice to optimize water usage on your farm.</p>
+        </div>
+    </section>
+
+    <section class="register-form">
+        <h2>Register</h2>
+        <form>
+            <label for="full-name">Full Name (as per ID):</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+            <label for="email">Gmail Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Gmail address" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <button type="submit">Create Profile</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Iricco Water Supply. All rights reserved.</p>
+    </footer>
+</body>
+</html>
